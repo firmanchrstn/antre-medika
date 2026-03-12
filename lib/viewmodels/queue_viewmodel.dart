@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/queue_model.dart';
 import '../services/queue_service.dart';
-import '../utils/queuing_math.dart';
+import '../core/utils/queuing_math.dart'; 
 
 class QueueViewModel extends ChangeNotifier {
   final QueueService _service = QueueService();
@@ -43,12 +43,12 @@ class QueueViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  void _calculateWaitTime() {
+void _calculateWaitTime() {
     if (_myQueue != null) {
       _estimatedWaitTime = QueuingMath.calculateEstimatedWaitTime(
-        _currentServing,
-        _myQueue!.number,
-        15, 
+        currentServing: _currentServing,      // Tambahkan nama parameter
+        userNumber: _myQueue!.number,         // Tambahkan nama parameter
+        avgServiceTimeMinutes: 15,            // Average mu (μ) derived from clinical data
       );
     }
   }
