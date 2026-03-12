@@ -1,3 +1,10 @@
+## Student Information
+- Name: Firman
+- Major: Information Systems
+- Semester: 6
+
+---
+
 # AntreMedika
 
 AntreMedika is a mobile application prototype for patient reservation systems in primary healthcare facilities (Clinics/Community Health Centers). This application is designed to reduce patient overcrowding in waiting rooms by implementing mathematical calculations based on the **M/M/1 Queuing Theory** to provide dynamic and real-time estimated waiting times.
@@ -18,6 +25,11 @@ This project is developed as part of the Practical Application Development cours
 - **State Management:** Provider
 - **Design/Typography:** Google Fonts, Material Design 3
 
+
+## Support
+
+For support, email [firmanchristianp@gmail.com]
+
 ## Project Structure
 
 The codebase follows a modular and scalable architecture:
@@ -34,9 +46,3 @@ antre_medika/
 │   └── main.dart       # Application entry point
 ├── pubspec.yaml
 └── README.md
-
-
-
-## Support
-
-For support, email [firmanchristianp@gmail.com]
