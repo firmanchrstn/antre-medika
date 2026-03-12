@@ -46,9 +46,9 @@ class QueueViewModel extends ChangeNotifier {
 void _calculateWaitTime() {
     if (_myQueue != null) {
       _estimatedWaitTime = QueuingMath.calculateEstimatedWaitTime(
-        currentServing: _currentServing,      // Tambahkan nama parameter
-        userNumber: _myQueue!.number,         // Tambahkan nama parameter
-        avgServiceTimeMinutes: 15,            // Average mu (μ) derived from clinical data
+        currentServing: _currentServing,      
+        userNumber: _myQueue!.number,         
+        avgServiceTimeMinutes: 15,
       );
     }
   }
